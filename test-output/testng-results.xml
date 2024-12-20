@@ -2,19 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4953" started-at="2024-12-18T23:28:40 IST" finished-at="2024-12-18T23:28:45 IST">
+  <suite name="Default suite" duration-ms="7222" started-at="2024-12-20T22:41:26 IST" finished-at="2024-12-20T22:41:34 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4953" started-at="2024-12-18T23:28:40 IST" finished-at="2024-12-18T23:28:45 IST">
+    <test name="Default test" duration-ms="7222" started-at="2024-12-20T22:41:26 IST" finished-at="2024-12-20T22:41:34 IST">
       <class name="com.spotify.oauth2.tests.PlaylistTests">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.spotify.oauth2.tests.PlaylistTests@2c039ac6]" name="beforeClass" is-config="true" duration-ms="1011" started-at="2024-12-18T23:28:40 IST" finished-at="2024-12-18T23:28:41 IST">
+        <test-method status="PASS" signature="shouldBeAbleToGetPlaylist()[pri:0, instance:com.spotify.oauth2.tests.PlaylistTests@5faeada1]" name="shouldBeAbleToGetPlaylist" duration-ms="7165" started-at="2024-12-20T22:41:26 IST" finished-at="2024-12-20T22:41:34 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="shouldNotBeAbleToCreatePlaylistWithTampperdOrExpiredToken()[pri:0, instance:com.spotify.oauth2.tests.PlaylistTests@2c039ac6]" name="shouldNotBeAbleToCreatePlaylistWithTampperdOrExpiredToken" duration-ms="3874" started-at="2024-12-18T23:28:41 IST" finished-at="2024-12-18T23:28:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldNotBeAbleToCreatePlaylistWithTampperdOrExpiredToken -->
+        </test-method> <!-- shouldBeAbleToGetPlaylist -->
       </class> <!-- com.spotify.oauth2.tests.PlaylistTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

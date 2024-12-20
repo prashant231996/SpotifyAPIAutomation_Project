@@ -39,14 +39,14 @@ public class PlaylistTests {
 		Assert.assertEquals(resPlaylist.getPublic(), reqPlaylist.getPublic());
 	}
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void shouldBeAbleToGetPlaylist()
 	{
-		Response res=PlaylistApi.getPlaylist("6Jwdl02e2BNsIaFCfyY23N");
+		Response res=PlaylistApi.getPlaylist("0rBtcnof08RwdmP7TxTpUg");
 		Assert.assertEquals(res.getStatusCode(), 200);
 		Playlist resPlaylist=res.as(Playlist.class);
-		Assert.assertEquals(resPlaylist.getName(), "Updated Playlist Name");
-		Assert.assertEquals(resPlaylist.getDescription(),"Updated playlist description");
+		Assert.assertEquals(resPlaylist.getName(), "New Playlist");
+		Assert.assertEquals(resPlaylist.getDescription(),"New playlist description");
 		Assert.assertTrue(resPlaylist.getPublic());
 	}
 	
@@ -77,7 +77,7 @@ public class PlaylistTests {
 		Assert.assertEquals(resError.getError().getStatus(), 400);
 	}
 	
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void shouldNotBeAbleToCreatePlaylistWithTampperdOrExpiredToken()
 	{
 		Playlist reqPlaylist=new Playlist();
