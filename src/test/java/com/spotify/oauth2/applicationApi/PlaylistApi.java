@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.given;
 
 import java.time.Instant;
 
+import com.spotify.oauth2.api.Routes;
 import com.spotify.oauth2.api.SpecBuilder;
 import com.spotify.oauth2.api.TokenManager;
 import com.spotify.oauth2.pojo.Playlist;
@@ -21,7 +22,7 @@ public class PlaylistApi {
 				.header("Authorization","Bearer "+TokenManager.getToken())
 				.body(reqPlaylist)
 				.when()
-				.post("/users/{userId}/playlists")
+				.post(Routes.cratePlayList)
 				.then().spec(SpecBuilder.getResponseSpec())
 				.extract().response();
 	}
@@ -34,7 +35,7 @@ public class PlaylistApi {
 				.header("Authorization","Bearer "+token)
 				.body(reqPlaylist)
 				.when()
-				.post("/users/{userId}/playlists")
+				.post(Routes.cratePlayList)
 				.then().spec(SpecBuilder.getResponseSpec())
 				.extract().response();
 	}
@@ -45,7 +46,7 @@ public class PlaylistApi {
 		.header("Authorization","Bearer "+TokenManager.getToken())		
 		.pathParam("playlistId", playlistId)
 		.when()
-		.get("/playlists/{playlistId}")
+		.get(Routes.getPlayList)
 		.then().spec(SpecBuilder.getResponseSpec())
 		.extract().response();
 	}
@@ -57,7 +58,7 @@ public class PlaylistApi {
 		.header("Authorization","Bearer "+TokenManager.getToken())
 		.body(payload)
 		.when()
-		.put("/playlists/{playlistId}")
+		.put(Routes.updatePlaylist)
 		.then().spec(SpecBuilder.getResponseSpec())
 		.extract().response();
 	}

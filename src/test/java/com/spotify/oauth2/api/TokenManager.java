@@ -1,9 +1,12 @@
 package com.spotify.oauth2.api;
 
+import java.io.IOException;
 import java.time.Instant;
 import java.util.HashMap;
 
 import org.testng.Assert;
+
+import com.spotify.oauth2.utils.PropertyUtils;
 
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -42,19 +45,20 @@ public class TokenManager {
 		return access_token;
 	}
 	
-	public static Response renewToken()
+	public static Response renewToken() throws IOException
 	{
 		HashMap<String,String>formParam=new HashMap<String,String>();
-		formParam.put("grant_type", "refresh_token");
-		formParam.put("refresh_token", "AQBPofEoJufmhEHpoROyiTcDB17AeV0O9qQcvfTAgo8EV4vl2fcCNWgDuXwppdR48nBYVqzNDauDvgCjvMN77wyOJSIZs1iWp7d-kVfnT3JPJXHGjW_sxRcOq1odVSRb15s");
-		formParam.put("client_id","aa7540425c6a42f4a6e1fd6bb2ddbb73");
-		formParam.put("client_secret", "2f091187e55d43f2959ab7e7d48f892d");
+		formParam.put("grant_type", PropertyUtils.getPropertyValue("grant_type"));
+		formParam.put("refresh_token", PropertyUtils.getPropertyValue("refresh_token"));
+		formParam.put("client_id",PropertyUtils.getPropertyValue("client_id"));
+		formParam.put("client_secret",PropertyUtils.getPropertyValue("client_secret"));
 		
 		return given()
+				.baseUri("https://accounts.spotify.com")
 				.contentType(ContentType.URLENC)
 				.formParams(formParam)
 				.when()
-				.post("https://accounts.spotify.com/api/token")
+				.post(Routes.renewToken)
 				.then().spec(SpecBuilder.getResponseSpec())
 				.assertThat().statusCode(200)
 				.extract().response();
