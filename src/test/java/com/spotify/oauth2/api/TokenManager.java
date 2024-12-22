@@ -19,7 +19,7 @@ public class TokenManager {
 	private static String access_token;
 	private static Instant expiryTime;
 	
-	public static String getToken()
+	public synchronized static String getToken()
 	{
 		try
 		{

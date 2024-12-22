@@ -13,6 +13,10 @@ public class SpecBuilder {
 	public static RequestSpecification getRequestSpec()
 	{
 		return new RequestSpecBuilder()
+				/*We are using system variable in below line so while executing cases run maven cammand  
+				 * as mvn clean test -DBASE_URI="https://api.spotify.com" 
+				 * So using system variables at run time we can change our base uri dynamically
+				.setBaseUri(System.getProperty("BASE_URI"))*/
 				.setBaseUri(Routes.baseUri)
 				.setBasePath(Routes.BASE_PATH)
 				.setContentType(ContentType.JSON)
