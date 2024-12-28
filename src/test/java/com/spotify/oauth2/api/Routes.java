@@ -12,5 +12,12 @@ public class Routes {
 	public static final String updatePlaylist="/playlists/{playlistId}";
 	public static final String renewToken="/api/token";
 	public static final String baseUri="https://api.spotify.com";
+	public static final String addItemsToPlaylist="/playlists/{playlistId}/tracks";
+	public static final String getItemsDetailsOfPlaylist="/playlists/{playlistId}/tracks";
+	public static final String updateItemDetailsOfPlaylist="/playlists/{playlistId}/tracks";
+	public static final String removeItemDetailsOfPlaylist="/playlists/{playlistId}/tracks";
+	public static final String getCurrantUserPlaylist="/me/playlists";
+	public static final String getUsersPlaylist="/users/{userId}/playlists";
+	
 	
 }

@@ -17,6 +17,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
@@ -24,12 +25,16 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 
 public class PlaylistTests {
 	
 	public static Playlist reqPlaylist;
 	public static Playlist resPlaylist;
+	public static String snapShotId;
 	
 	public Playlist playListBuilder(String name, String description, boolean _public)
 	{
@@ -101,6 +106,68 @@ public class PlaylistTests {
 		Assert.assertEquals(res.getStatusCode(), StatusCode.CODE_401.code);
 		ErrorRoot resError=res.as(ErrorRoot.class);
 		assertError(resError,StatusCode.CODE_401);
+	}
+	
+	@Test(enabled=true,priority=6)
+	public void shouldBeAbleToAddItemDetails()
+	{
+		String itemDetails="{\"uris\": [\"spotify:track:4iV5W9uYEdYUVa79Axb7Rh\",\"spotify:track:1301WleyT98MSxVHPZCA6M\", \"spotify:episode:512ojhOuo1ktJprKbVcKyQ\"]}";
+		Response res=PlaylistApi.addItemsToPlaylist(resPlaylist.getId(), itemDetails);
+		Assert.assertEquals(res.getStatusCode(), StatusCode.CODE_201.code);
+		JsonPath js=new JsonPath(res.asString());
+		snapShotId=js.get("snapshot_id");
+	}
+	
+	@Test(enabled=true,priority=7)
+	public void shouldBeAbleToGetItemDetails()
+	{
+		Response res=PlaylistApi.getItemDetails(resPlaylist.getId());
+		Assert.assertEquals(res.getStatusCode(), StatusCode.CODE_200.code);
+	}
+	
+	@Test(enabled=true,priority=8)
+	public void shouldBeAbleToUpdateItemDetails()
+	{
+		List<Object>uriList=new ArrayList<Object>();
+		uriList.add("spotify:track:4iV5W9uYEdYUVa79Axb7Rh");
+		uriList.add("spotify:track:1301WleyT98MSxVHPZCA6M");
+		uriList.add("spotify:episode:512ojhOuo1ktJprKbVcKyQ");
+		HashMap<String,Object>hmap=new HashMap<String, Object>();
+		hmap.put("uris",uriList);
+		Response res=PlaylistApi.updateItemDetails(resPlaylist.getId(), hmap);
+		Assert.assertEquals(res.getStatusCode(), StatusCode.CODE_200.code);
+	}
+	
+	@Test(enabled=true,priority=9)
+	public void shouldBeABleToRemoveItemDetails()
+	{
+		List<Object>uriList=new ArrayList<Object>();
+		uriList.add("spotify:track:4iV5W9uYEdYUVa79Axb7Rh");
+		uriList.add("spotify:track:1301WleyT98MSxVHPZCA6M");
+		uriList.add("spotify:episode:512ojhOuo1ktJprKbVcKyQ");
+		HashMap<String,Object>urimap=new HashMap<String,Object>();
+		urimap.put("uri","spotify:track:4iV5W9uYEdYUVa79Axb7Rh");
+		List<Object>trackList=new ArrayList<Object>();
+		trackList.add(urimap);
+		HashMap<String,Object>hmap=new HashMap<String,Object>();
+		hmap.put("tracks",trackList);
+		hmap.put("snapshot_id",snapShotId);
+		Response res=PlaylistApi.removeItemDetails(resPlaylist.getId(), hmap);
+		Assert.assertEquals(res.getStatusCode(), StatusCode.CODE_200.code);
+	}
+	
+	@Test(enabled=true,priority=10)
+	public void getCurrantUserPlaylist()
+	{
+		Response res=PlaylistApi.getCurrantUserPlaylist();
+		Assert.assertEquals(res.getStatusCode(), StatusCode.CODE_200.code);
+	}
+	
+	@Test(enabled=true,priority=11)
+	public void getUsersPlaylist() throws IOException
+	{
+		Response res=PlaylistApi.getUsersPlaylist(PropertyUtils.getPropertyValue("userId"));
+		Assert.assertEquals(res.getStatusCode(), StatusCode.CODE_200.code);
 	}
 	
 	
