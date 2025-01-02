@@ -19,5 +19,11 @@ public class Routes {
 	public static final String getCurrantUserPlaylist="/me/playlists";
 	public static final String getUsersPlaylist="/users/{userId}/playlists";
 	
+	//Album api endpints
+	public static final String saveAlbum="/me/albums";
+	public static final String getAlbum="/me/albums";
+	public static final String removeAlbum="/me/albums";
+	public static final String usersSavedAlbum="/me/albums/contains";
+	
 	
 }

@@ -1,57 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13605" started-at="2024-12-28T20:20:31 IST" finished-at="2024-12-28T20:20:45 IST">
+  <suite name="Default suite" duration-ms="14371" started-at="2025-01-02T22:52:50 IST" finished-at="2025-01-02T22:53:05 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13605" started-at="2024-12-28T20:20:31 IST" finished-at="2024-12-28T20:20:45 IST">
-      <class name="com.spotify.oauth2.tests.PlaylistTests">
-        <test-method status="PASS" signature="shouldBeAbleToCreatePlaylist()[pri:1, instance:com.spotify.oauth2.tests.PlaylistTests@76b0bfab]" name="shouldBeAbleToCreatePlaylist" duration-ms="7136" started-at="2024-12-28T20:20:31 IST" finished-at="2024-12-28T20:20:38 IST">
+    <test name="Default test" duration-ms="14371" started-at="2025-01-02T22:52:50 IST" finished-at="2025-01-02T22:53:05 IST">
+      <class name="com.spotify.oauth2.tests.AlbumAPITests">
+        <test-method status="PASS" signature="userShouldAbleToSaveAlbum()[pri:1, instance:com.spotify.oauth2.tests.AlbumAPITests@2781e022]" name="userShouldAbleToSaveAlbum" duration-ms="11942" started-at="2025-01-02T22:52:50 IST" description="User should be able to save the album" finished-at="2025-01-02T22:53:02 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldBeAbleToCreatePlaylist -->
-        <test-method status="PASS" signature="shouldBeAbleToGetPlaylist()[pri:2, instance:com.spotify.oauth2.tests.PlaylistTests@76b0bfab]" name="shouldBeAbleToGetPlaylist" duration-ms="672" started-at="2024-12-28T20:20:38 IST" finished-at="2024-12-28T20:20:39 IST">
+        </test-method> <!-- userShouldAbleToSaveAlbum -->
+        <test-method status="PASS" signature="UserShouldAbleToGetAlubumDetails()[pri:2, instance:com.spotify.oauth2.tests.AlbumAPITests@2781e022]" name="UserShouldAbleToGetAlubumDetails" duration-ms="844" started-at="2025-01-02T22:53:02 IST" description="User should able to get album details" finished-at="2025-01-02T22:53:03 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldBeAbleToGetPlaylist -->
-        <test-method status="PASS" signature="shouldBeAbleToUpdatePlaylist()[pri:3, instance:com.spotify.oauth2.tests.PlaylistTests@76b0bfab]" name="shouldBeAbleToUpdatePlaylist" duration-ms="585" started-at="2024-12-28T20:20:39 IST" finished-at="2024-12-28T20:20:40 IST">
+        </test-method> <!-- UserShouldAbleToGetAlubumDetails -->
+        <test-method status="PASS" signature="userShouldAbleToRemoveAlbumDetails()[pri:3, instance:com.spotify.oauth2.tests.AlbumAPITests@2781e022]" name="userShouldAbleToRemoveAlbumDetails" duration-ms="678" started-at="2025-01-02T22:53:03 IST" description="User should able to resmove album details" finished-at="2025-01-02T22:53:04 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldBeAbleToUpdatePlaylist -->
-        <test-method status="PASS" signature="shouldNotBeAbleToCreatePlaylist()[pri:4, instance:com.spotify.oauth2.tests.PlaylistTests@76b0bfab]" name="shouldNotBeAbleToCreatePlaylist" duration-ms="546" started-at="2024-12-28T20:20:40 IST" finished-at="2024-12-28T20:20:40 IST">
+        </test-method> <!-- userShouldAbleToRemoveAlbumDetails -->
+        <test-method status="PASS" signature="userShouldAbleToGetAlbumDetails()[pri:4, instance:com.spotify.oauth2.tests.AlbumAPITests@2781e022]" name="userShouldAbleToGetAlbumDetails" duration-ms="844" started-at="2025-01-02T22:53:04 IST" description="User should able to get saved album details" finished-at="2025-01-02T22:53:05 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldNotBeAbleToCreatePlaylist -->
-        <test-method status="PASS" signature="shouldNotBeAbleToCreatePlaylistWithTampperdOrExpiredToken()[pri:5, instance:com.spotify.oauth2.tests.PlaylistTests@76b0bfab]" name="shouldNotBeAbleToCreatePlaylistWithTampperdOrExpiredToken" duration-ms="501" started-at="2024-12-28T20:20:40 IST" finished-at="2024-12-28T20:20:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldNotBeAbleToCreatePlaylistWithTampperdOrExpiredToken -->
-        <test-method status="PASS" signature="shouldBeAbleToAddItemDetails()[pri:6, instance:com.spotify.oauth2.tests.PlaylistTests@76b0bfab]" name="shouldBeAbleToAddItemDetails" duration-ms="717" started-at="2024-12-28T20:20:41 IST" finished-at="2024-12-28T20:20:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldBeAbleToAddItemDetails -->
-        <test-method status="PASS" signature="shouldBeAbleToGetItemDetails()[pri:7, instance:com.spotify.oauth2.tests.PlaylistTests@76b0bfab]" name="shouldBeAbleToGetItemDetails" duration-ms="598" started-at="2024-12-28T20:20:41 IST" finished-at="2024-12-28T20:20:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldBeAbleToGetItemDetails -->
-        <test-method status="PASS" signature="shouldBeAbleToUpdateItemDetails()[pri:8, instance:com.spotify.oauth2.tests.PlaylistTests@76b0bfab]" name="shouldBeAbleToUpdateItemDetails" duration-ms="587" started-at="2024-12-28T20:20:42 IST" finished-at="2024-12-28T20:20:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldBeAbleToUpdateItemDetails -->
-        <test-method status="PASS" signature="shouldBeABleToRemoveItemDetails()[pri:9, instance:com.spotify.oauth2.tests.PlaylistTests@76b0bfab]" name="shouldBeABleToRemoveItemDetails" duration-ms="620" started-at="2024-12-28T20:20:43 IST" finished-at="2024-12-28T20:20:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldBeABleToRemoveItemDetails -->
-        <test-method status="PASS" signature="getCurrantUserPlaylist()[pri:10, instance:com.spotify.oauth2.tests.PlaylistTests@76b0bfab]" name="getCurrantUserPlaylist" duration-ms="800" started-at="2024-12-28T20:20:43 IST" finished-at="2024-12-28T20:20:44 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getCurrantUserPlaylist -->
-        <test-method status="PASS" signature="getUsersPlaylist()[pri:11, instance:com.spotify.oauth2.tests.PlaylistTests@76b0bfab]" name="getUsersPlaylist" duration-ms="731" started-at="2024-12-28T20:20:44 IST" finished-at="2024-12-28T20:20:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUsersPlaylist -->
-      </class> <!-- com.spotify.oauth2.tests.PlaylistTests -->
+        </test-method> <!-- userShouldAbleToGetAlbumDetails -->
+      </class> <!-- com.spotify.oauth2.tests.AlbumAPITests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
