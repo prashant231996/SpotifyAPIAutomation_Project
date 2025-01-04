@@ -24,6 +24,10 @@ public class Routes {
 	public static final String getAlbum="/me/albums";
 	public static final String removeAlbum="/me/albums";
 	public static final String usersSavedAlbum="/me/albums/contains";
+	public static final String getSingleAlbumInfo="/albums/{albumId}";
+	public static final String getSevaralAlbumInfo="/albums";
+	public static final String getAlbumTrack="/albums/{albumId}/tracks";
+	public static final String getNewRelease="/browse/new-releases";
 	
 	
 }

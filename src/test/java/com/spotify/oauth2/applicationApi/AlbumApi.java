@@ -33,6 +33,16 @@ public class AlbumApi {
 				.extract().response();
 	}
 	
+	public static Response getAlubum(String invalidToken)
+	{
+		return given().spec(SpecBuilder.getRequestSpec())
+				.auth().oauth2(invalidToken)
+				.when()
+				.get(Routes.getAlbum)
+				.then().spec(SpecBuilder.getResponseSpec())
+				.extract().response();
+	}
+	
 	public static Response removeAlbum(HashMap payload)
 	{
 		return given()
@@ -53,6 +63,53 @@ public class AlbumApi {
 				.queryParam("ids", id)
 				.when()
 				.get(Routes.getCurrantUserPlaylist)
+				.then().spec(SpecBuilder.getResponseSpec())
+				.extract().response();
+	}
+	
+	public static Response getSingleAlbumInfo(String albumId)
+	{
+		return given()
+				.spec(SpecBuilder.getRequestSpec())
+				.auth().oauth2(TokenManager.getToken())
+				.pathParam("albumId", albumId)
+				.when()
+				.get(Routes.getSingleAlbumInfo)
+				.then().spec(SpecBuilder.getResponseSpec())
+				.extract().response();
+	}
+	
+	public static Response getSeveralAlbumInfo(String albumIds)
+	{
+		return given()
+				.spec(SpecBuilder.getRequestSpec())
+				.auth().oauth2(TokenManager.getToken())
+				.queryParam("ids", albumIds)
+				.when()
+				.get(Routes.getSevaralAlbumInfo)
+				.then().spec(SpecBuilder.getResponseSpec())
+				.extract().response();
+	}
+	
+	public static Response getAlbumTrack(String albumId)
+	{
+		return given()
+				.spec(SpecBuilder.getRequestSpec())
+				.auth().oauth2(TokenManager.getToken())
+				.pathParam("albumId", albumId)
+				.when()
+				.get(Routes.getAlbumTrack)
+				.then().spec(SpecBuilder.getResponseSpec())
+				.extract().response();
+	}
+	
+	public static Response getNewRelease()
+	{
+		return given()
+				.spec(SpecBuilder.getRequestSpec())
+				.auth().oauth2(TokenManager.getToken())
+				.when()
+				.get(Routes.getNewRelease)
 				.then().spec(SpecBuilder.getResponseSpec())
 				.extract().response();
 	}
