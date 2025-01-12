@@ -19,7 +19,7 @@ public class Routes {
 	public static final String getCurrantUserPlaylist="/me/playlists";
 	public static final String getUsersPlaylist="/users/{userId}/playlists";
 	
-	//Album api endpints
+	//Album api endpoints
 	public static final String saveAlbum="/me/albums";
 	public static final String getAlbum="/me/albums";
 	public static final String removeAlbum="/me/albums";
@@ -28,6 +28,17 @@ public class Routes {
 	public static final String getSevaralAlbumInfo="/albums";
 	public static final String getAlbumTrack="/albums/{albumId}/tracks";
 	public static final String getNewRelease="/browse/new-releases";
+	
+	//Artist api endpoints
+	public static final String getArtistDetails="/artists/{artistId}";
+	public static final String getArtistAlbum="/artists/{artistId}/albums";
+	public static final String getArtistTopTrack="/artists/{artistId}/top-tracks";
+	public static final String getArtistsDetails="/artists";
+	public static final String getArtistRelatedArtist="/artists/{artistId}/related-artists";
+	
+	
+	
+	
 	
 	
 }

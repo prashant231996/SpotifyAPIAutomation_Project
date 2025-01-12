@@ -1,53 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13676" started-at="2025-01-04T12:30:17 IST" finished-at="2025-01-04T12:30:30 IST">
+  <suite name="Default suite" duration-ms="15424" started-at="2025-01-12T12:00:20 IST" finished-at="2025-01-12T12:00:36 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13676" started-at="2025-01-04T12:30:17 IST" finished-at="2025-01-04T12:30:30 IST">
-      <class name="com.spotify.oauth2.tests.AlbumAPITests">
-        <test-method status="PASS" signature="userShouldAbleToSaveAlbum()[pri:1, instance:com.spotify.oauth2.tests.AlbumAPITests@4232c52b]" name="userShouldAbleToSaveAlbum" duration-ms="7116" started-at="2025-01-04T12:30:17 IST" description="User should be able to save the album" finished-at="2025-01-04T12:30:24 IST">
+    <test name="Default test" duration-ms="15424" started-at="2025-01-12T12:00:20 IST" finished-at="2025-01-12T12:00:36 IST">
+      <class name="com.spotify.oauth2.tests.ArtistAPITests">
+        <test-method status="PASS" signature="getArtistDetails()[pri:1, instance:com.spotify.oauth2.tests.ArtistAPITests@2781e022]" name="getArtistDetails" duration-ms="9876" started-at="2025-01-12T12:00:21 IST" description="Get artist details" finished-at="2025-01-12T12:00:30 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userShouldAbleToSaveAlbum -->
-        <test-method status="PASS" signature="UserShouldAbleToGetAlubumDetails()[pri:2, instance:com.spotify.oauth2.tests.AlbumAPITests@4232c52b]" name="UserShouldAbleToGetAlubumDetails" duration-ms="670" started-at="2025-01-04T12:30:24 IST" description="User should able to get album details" finished-at="2025-01-04T12:30:25 IST">
+        </test-method> <!-- getArtistDetails -->
+        <test-method status="PASS" signature="getArtistAlbumDetails()[pri:2, instance:com.spotify.oauth2.tests.ArtistAPITests@2781e022]" name="getArtistAlbumDetails" duration-ms="1131" started-at="2025-01-12T12:00:30 IST" description="Get artist album details" finished-at="2025-01-12T12:00:32 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserShouldAbleToGetAlubumDetails -->
-        <test-method status="PASS" signature="userShouldAbleToRemoveAlbumDetails()[pri:3, instance:com.spotify.oauth2.tests.AlbumAPITests@4232c52b]" name="userShouldAbleToRemoveAlbumDetails" duration-ms="562" started-at="2025-01-04T12:30:25 IST" description="User should able to resmove album details" finished-at="2025-01-04T12:30:25 IST">
+        </test-method> <!-- getArtistAlbumDetails -->
+        <test-method status="PASS" signature="getArtistTopTrack()[pri:3, instance:com.spotify.oauth2.tests.ArtistAPITests@2781e022]" name="getArtistTopTrack" duration-ms="1170" started-at="2025-01-12T12:00:32 IST" description="Get artist top track details" finished-at="2025-01-12T12:00:33 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userShouldAbleToRemoveAlbumDetails -->
-        <test-method status="PASS" signature="userShouldAbleToGetAlbumDetails()[pri:4, instance:com.spotify.oauth2.tests.AlbumAPITests@4232c52b]" name="userShouldAbleToGetAlbumDetails" duration-ms="776" started-at="2025-01-04T12:30:25 IST" description="User should able to get saved album details" finished-at="2025-01-04T12:30:26 IST">
+        </test-method> <!-- getArtistTopTrack -->
+        <test-method status="PASS" signature="getArtistsDetails()[pri:4, instance:com.spotify.oauth2.tests.ArtistAPITests@2781e022]" name="getArtistsDetails" duration-ms="868" started-at="2025-01-12T12:00:33 IST" description="Get artists details" finished-at="2025-01-12T12:00:34 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userShouldAbleToGetAlbumDetails -->
-        <test-method status="PASS" signature="UserShouldNotAbleToGetAlubumDetailsWithInvalidToken()[pri:5, instance:com.spotify.oauth2.tests.AlbumAPITests@4232c52b]" name="UserShouldNotAbleToGetAlubumDetailsWithInvalidToken" duration-ms="644" started-at="2025-01-04T12:30:26 IST" description="User should not able to get album details with invalid token" finished-at="2025-01-04T12:30:27 IST">
+        </test-method> <!-- getArtistsDetails -->
+        <test-method status="PASS" signature="getArtistsRelatedArtistDetails()[pri:5, instance:com.spotify.oauth2.tests.ArtistAPITests@2781e022]" name="getArtistsRelatedArtistDetails" duration-ms="2234" started-at="2025-01-12T12:00:34 IST" description="Get artists related artist details" finished-at="2025-01-12T12:00:36 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserShouldNotAbleToGetAlubumDetailsWithInvalidToken -->
-        <test-method status="PASS" signature="UserShouldNotAbleToGetAlubumDetailsWithoutToken()[pri:6, instance:com.spotify.oauth2.tests.AlbumAPITests@4232c52b]" name="UserShouldNotAbleToGetAlubumDetailsWithoutToken" duration-ms="511" started-at="2025-01-04T12:30:27 IST" description="User should not able to get album details without passing token" finished-at="2025-01-04T12:30:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserShouldNotAbleToGetAlubumDetailsWithoutToken -->
-        <test-method status="PASS" signature="UserShouldABleToGetSingleAlbumInfo()[pri:7, instance:com.spotify.oauth2.tests.AlbumAPITests@4232c52b]" name="UserShouldABleToGetSingleAlbumInfo" duration-ms="640" started-at="2025-01-04T12:30:27 IST" description="User should able to get single album info" finished-at="2025-01-04T12:30:28 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserShouldABleToGetSingleAlbumInfo -->
-        <test-method status="PASS" signature="UserShouldABleToGetSeveralAlbumInfo()[pri:8, instance:com.spotify.oauth2.tests.AlbumAPITests@4232c52b]" name="UserShouldABleToGetSeveralAlbumInfo" duration-ms="1011" started-at="2025-01-04T12:30:28 IST" description="User should able to get several album info" finished-at="2025-01-04T12:30:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserShouldABleToGetSeveralAlbumInfo -->
-        <test-method status="PASS" signature="UserShouldABleToGetAlbumTrackInfo()[pri:9, instance:com.spotify.oauth2.tests.AlbumAPITests@4232c52b]" name="UserShouldABleToGetAlbumTrackInfo" duration-ms="570" started-at="2025-01-04T12:30:29 IST" description="User should able to get album track details" finished-at="2025-01-04T12:30:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserShouldABleToGetAlbumTrackInfo -->
-        <test-method status="PASS" signature="UserShouldABleToGetNewRelease()[pri:10, instance:com.spotify.oauth2.tests.AlbumAPITests@4232c52b]" name="UserShouldABleToGetNewRelease" duration-ms="1031" started-at="2025-01-04T12:30:29 IST" description="User should able to get New releases details" finished-at="2025-01-04T12:30:30 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserShouldABleToGetNewRelease -->
-      </class> <!-- com.spotify.oauth2.tests.AlbumAPITests -->
+        </test-method> <!-- getArtistsRelatedArtistDetails -->
+      </class> <!-- com.spotify.oauth2.tests.ArtistAPITests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
