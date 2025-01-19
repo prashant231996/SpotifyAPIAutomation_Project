@@ -36,6 +36,10 @@ public class Routes {
 	public static final String getArtistsDetails="/artists";
 	public static final String getArtistRelatedArtist="/artists/{artistId}/related-artists";
 	
+	//Audio Book api endpoints
+	public static final String saveAudioBooks="/me/audiobooks";
+	public static final String getAnAudioBook="/audiobooks/{audioBookId}";
+	
 	
 	
 	
