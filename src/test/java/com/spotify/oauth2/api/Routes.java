@@ -39,6 +39,11 @@ public class Routes {
 	//Audio Book api endpoints
 	public static final String saveAudioBooks="/me/audiobooks";
 	public static final String getAnAudioBook="/audiobooks/{audioBookId}";
+	public static final String chkUsersSavedAudioBook="/me/audiobooks/contains";
+	public static final String getSevaralAudioBooks="/audiobooks";
+	public static final String getAudioBookChapter="/audiobooks/{audioBookId}/chapters";
+	public static final String getUsersSavedAudioBooks="/me/audiobooks";
+	public static final String removeUsersSavedAudioBooks="/me/audiobooks";
 	
 	
 	
