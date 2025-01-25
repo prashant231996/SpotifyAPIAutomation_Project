@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\h\AppData\Local\Temp\testng-eclipse--1687143462\testng-customsuite.xml</span>
+                    <span>C:\Users\h\AppData\Local\Temp\testng-eclipse--1623932644\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.spotify.oauth2.tests.AudioBookAPITest" hash-for-method="removeUsersSavedAudioBook">removeUsersSavedAudioBook</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.spotify.oauth2.tests.CategoryAPITests" hash-for-method="getSevaralCategoryDetails">getSevaralCategoryDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.spotify.oauth2.tests.CategoryAPITests" hash-for-method="getSingleCategoryDetails">getSingleCategoryDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,16 +127,25 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.spotify.oauth2.tests.AudioBookAPITest</span>
+              <span class="class-name">com.spotify.oauth2.tests.CategoryAPITests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="removeUsersSavedAudioBook">
-                  </a> <!-- removeUsersSavedAudioBook -->
-                  <span class="method-name">removeUsersSavedAudioBook</span>
+                  <a name="getSevaralCategoryDetails">
+                  </a> <!-- getSevaralCategoryDetails -->
+                  <span class="method-name">getSevaralCategoryDetails</span>
                   <em>
-(Remove Users saved audio books)                  </em>
+(Get sevaral categories)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSingleCategoryDetails">
+                  </a> <!-- getSingleCategoryDetails -->
+                  <span class="method-name">getSingleCategoryDetails</span>
+                  <em>
+(Get single category details)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -139,7 +153,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\h\AppData\Local\Temp\testng-eclipse--1687143462\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\h\AppData\Local\Temp\testng-eclipse--1623932644\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,11 +162,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.spotify.oauth2.tests.AudioBookAPITest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;removeUsersSavedAudioBook&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.spotify.oauth2.tests.AudioBookAPITest --&gt;
+      &lt;class name=&quot;com.spotify.oauth2.tests.CategoryAPITests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -192,16 +202,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'removeUsersSavedAudioBook')
-data.setCell(0, 2, 'com.spotify.oauth2.tests.AudioBookAPITest')
-data.setCell(0, 3, 14923);
+data.setCell(0, 1, 'getSevaralCategoryDetails')
+data.setCell(0, 2, 'com.spotify.oauth2.tests.CategoryAPITests')
+data.setCell(0, 3, 11690);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getSingleCategoryDetails')
+data.setCell(1, 2, 'com.spotify.oauth2.tests.CategoryAPITests')
+data.setCell(1, 3, 750);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -216,26 +230,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.spotify.oauth2.tests.AudioBookAPITest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">getAudioBookChapter</span>
-                <br/>
-                <span class="ignored-method-name">chkUsersSavedAudioBooks</span>
-                <br/>
-                <span class="ignored-method-name">getAnAudioBookDetails</span>
-                <br/>
-                <span class="ignored-method-name">saveAudioBooks</span>
-                <br/>
-                <span class="ignored-method-name">getUsersSavedAudioBooks</span>
-                <br/>
-                <span class="ignored-method-name">getSevaralAudioBooks</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -244,10 +241,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.spotify.oauth2.tests.AudioBookAPITest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.spotify.oauth2.tests.CategoryAPITests</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">removeUsersSavedAudioBook</span>
+                <span class="method-name">getSevaralCategoryDetails</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getSingleCategoryDetails</span>
+                <span class="method-start">11709 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -45,6 +45,10 @@ public class Routes {
 	public static final String getUsersSavedAudioBooks="/me/audiobooks";
 	public static final String removeUsersSavedAudioBooks="/me/audiobooks";
 	
+	//Category API endpoints
+	public static final String getSingleCategory="/browse/categories/{categoryId}";
+	public static final String getSevaralCategories="/browse/categories";
+	
 	
 	
 	
