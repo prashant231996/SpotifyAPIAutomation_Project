@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12564" started-at="2025-01-25T12:59:28 IST" finished-at="2025-01-25T12:59:40 IST">
+  <suite name="Default suite" duration-ms="13066" started-at="2025-01-30T22:00:48 IST" finished-at="2025-01-30T22:01:01 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12564" started-at="2025-01-25T12:59:28 IST" finished-at="2025-01-25T12:59:40 IST">
-      <class name="com.spotify.oauth2.tests.CategoryAPITests">
-        <test-method status="PASS" signature="getSevaralCategoryDetails()[pri:1, instance:com.spotify.oauth2.tests.CategoryAPITests@33c7e1bb]" name="getSevaralCategoryDetails" duration-ms="11690" started-at="2025-01-25T12:59:28 IST" description="Get sevaral categories" finished-at="2025-01-25T12:59:40 IST">
+    <test name="Default test" duration-ms="13066" started-at="2025-01-30T22:00:48 IST" finished-at="2025-01-30T22:01:01 IST">
+      <class name="com.spotify.oauth2.tests.ChapterAPITest">
+        <test-method status="PASS" signature="getChapterDetail()[pri:1, instance:com.spotify.oauth2.tests.ChapterAPITest@2781e022]" name="getChapterDetail" duration-ms="12267" started-at="2025-01-30T22:00:48 IST" description="Get chapter details" finished-at="2025-01-30T22:01:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getSevaralCategoryDetails -->
-        <test-method status="PASS" signature="getSingleCategoryDetails()[pri:2, instance:com.spotify.oauth2.tests.CategoryAPITests@33c7e1bb]" name="getSingleCategoryDetails" duration-ms="750" started-at="2025-01-25T12:59:40 IST" description="Get single category details" finished-at="2025-01-25T12:59:40 IST">
+        </test-method> <!-- getChapterDetail -->
+        <test-method status="PASS" signature="getChaptersDetails()[pri:2, instance:com.spotify.oauth2.tests.ChapterAPITest@2781e022]" name="getChaptersDetails" duration-ms="657" started-at="2025-01-30T22:01:00 IST" description="Get chapters details" finished-at="2025-01-30T22:01:01 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getSingleCategoryDetails -->
-      </class> <!-- com.spotify.oauth2.tests.CategoryAPITests -->
+        </test-method> <!-- getChaptersDetails -->
+      </class> <!-- com.spotify.oauth2.tests.ChapterAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

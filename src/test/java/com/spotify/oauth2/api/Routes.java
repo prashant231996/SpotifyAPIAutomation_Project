@@ -49,6 +49,10 @@ public class Routes {
 	public static final String getSingleCategory="/browse/categories/{categoryId}";
 	public static final String getSevaralCategories="/browse/categories";
 	
+	//Chapter API endpoints
+	public static final String getChapterDetail="/chapters/{chapterId}";
+	public static final String getChaptersDetail="/chapters";
+	
 	
 	
 	
