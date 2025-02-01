@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\h\AppData\Local\Temp\testng-eclipse--909785924\testng-customsuite.xml</span>
+                    <span>C:\Users\h\AppData\Local\Temp\testng-eclipse-1560048183\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.spotify.oauth2.tests.ChapterAPITest" hash-for-method="getChapterDetail">getChapterDetail</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.spotify.oauth2.tests.EpisodeAPITests" hash-for-method="getEpisodeDetails">getEpisodeDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.spotify.oauth2.tests.ChapterAPITest" hash-for-method="getChaptersDetails">getChaptersDetails</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.spotify.oauth2.tests.EpisodeAPITests" hash-for-method="getSevaralEpisodeDetails">getSevaralEpisodeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.spotify.oauth2.tests.EpisodeAPITests" hash-for-method="saveEpisodeDetails">saveEpisodeDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,25 +132,34 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.spotify.oauth2.tests.ChapterAPITest</span>
+              <span class="class-name">com.spotify.oauth2.tests.EpisodeAPITests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getChapterDetail">
-                  </a> <!-- getChapterDetail -->
-                  <span class="method-name">getChapterDetail</span>
+                  <a name="getEpisodeDetails">
+                  </a> <!-- getEpisodeDetails -->
+                  <span class="method-name">getEpisodeDetails</span>
                   <em>
-(Get chapter details)                  </em>
+(Get episode details.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getChaptersDetails">
-                  </a> <!-- getChaptersDetails -->
-                  <span class="method-name">getChaptersDetails</span>
+                  <a name="getSevaralEpisodeDetails">
+                  </a> <!-- getSevaralEpisodeDetails -->
+                  <span class="method-name">getSevaralEpisodeDetails</span>
                   <em>
-(Get chapters details)                  </em>
+(Get sevaral episode details.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="saveEpisodeDetails">
+                  </a> <!-- saveEpisodeDetails -->
+                  <span class="method-name">saveEpisodeDetails</span>
+                  <em>
+(Save episode details.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -153,7 +167,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\h\AppData\Local\Temp\testng-eclipse--909785924\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\h\AppData\Local\Temp\testng-eclipse-1560048183\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -162,7 +176,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.spotify.oauth2.tests.ChapterAPITest&quot;/&gt;
+      &lt;class name=&quot;com.spotify.oauth2.tests.EpisodeAPITests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -202,20 +216,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getChapterDetail')
-data.setCell(0, 2, 'com.spotify.oauth2.tests.ChapterAPITest')
-data.setCell(0, 3, 12267);
+data.setCell(0, 1, 'getEpisodeDetails')
+data.setCell(0, 2, 'com.spotify.oauth2.tests.EpisodeAPITests')
+data.setCell(0, 3, 12012);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getChaptersDetails')
-data.setCell(1, 2, 'com.spotify.oauth2.tests.ChapterAPITest')
-data.setCell(1, 3, 657);
+data.setCell(1, 1, 'saveEpisodeDetails')
+data.setCell(1, 2, 'com.spotify.oauth2.tests.EpisodeAPITests')
+data.setCell(1, 3, 894);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getSevaralEpisodeDetails')
+data.setCell(2, 2, 'com.spotify.oauth2.tests.EpisodeAPITests')
+data.setCell(2, 3, 580);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -241,14 +259,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.spotify.oauth2.tests.ChapterAPITest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.spotify.oauth2.tests.EpisodeAPITests</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">getChapterDetail</span>
+                <span class="method-name">getEpisodeDetails</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getChaptersDetails</span>
-                <span class="method-start">12283 ms</span>
+                <span class="method-name">getSevaralEpisodeDetails</span>
+                <span class="method-start">12037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">saveEpisodeDetails</span>
+                <span class="method-start">12621 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -53,6 +53,11 @@ public class Routes {
 	public static final String getChapterDetail="/chapters/{chapterId}";
 	public static final String getChaptersDetail="/chapters";
 	
+	//Episode API endpoints
+	public static final String getEpisodeDetail="/episodes/{episodeId}";
+	public static final String getSevaralEpisods="/episodes";
+	public static final String saveEpisode="/me/episodes";
+	
 	
 	
 	

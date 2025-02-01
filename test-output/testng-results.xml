@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13066" started-at="2025-01-30T22:00:48 IST" finished-at="2025-01-30T22:01:01 IST">
+  <suite name="Default suite" duration-ms="13630" started-at="2025-02-01T13:20:45 IST" finished-at="2025-02-01T13:20:59 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13066" started-at="2025-01-30T22:00:48 IST" finished-at="2025-01-30T22:01:01 IST">
-      <class name="com.spotify.oauth2.tests.ChapterAPITest">
-        <test-method status="PASS" signature="getChapterDetail()[pri:1, instance:com.spotify.oauth2.tests.ChapterAPITest@2781e022]" name="getChapterDetail" duration-ms="12267" started-at="2025-01-30T22:00:48 IST" description="Get chapter details" finished-at="2025-01-30T22:01:00 IST">
+    <test name="Default test" duration-ms="13630" started-at="2025-02-01T13:20:45 IST" finished-at="2025-02-01T13:20:59 IST">
+      <class name="com.spotify.oauth2.tests.EpisodeAPITests">
+        <test-method status="PASS" signature="getEpisodeDetails()[pri:1, instance:com.spotify.oauth2.tests.EpisodeAPITests@2781e022]" name="getEpisodeDetails" duration-ms="12012" started-at="2025-02-01T13:20:45 IST" description="Get episode details." finished-at="2025-02-01T13:20:57 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getChapterDetail -->
-        <test-method status="PASS" signature="getChaptersDetails()[pri:2, instance:com.spotify.oauth2.tests.ChapterAPITest@2781e022]" name="getChaptersDetails" duration-ms="657" started-at="2025-01-30T22:01:00 IST" description="Get chapters details" finished-at="2025-01-30T22:01:01 IST">
+        </test-method> <!-- getEpisodeDetails -->
+        <test-method status="PASS" signature="getSevaralEpisodeDetails()[pri:2, instance:com.spotify.oauth2.tests.EpisodeAPITests@2781e022]" name="getSevaralEpisodeDetails" duration-ms="580" started-at="2025-02-01T13:20:57 IST" description="Get sevaral episode details." finished-at="2025-02-01T13:20:58 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getChaptersDetails -->
-      </class> <!-- com.spotify.oauth2.tests.ChapterAPITest -->
+        </test-method> <!-- getSevaralEpisodeDetails -->
+        <test-method status="PASS" signature="saveEpisodeDetails()[pri:3, instance:com.spotify.oauth2.tests.EpisodeAPITests@2781e022]" name="saveEpisodeDetails" duration-ms="894" started-at="2025-02-01T13:20:58 IST" description="Save episode details." finished-at="2025-02-01T13:20:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveEpisodeDetails -->
+      </class> <!-- com.spotify.oauth2.tests.EpisodeAPITests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
