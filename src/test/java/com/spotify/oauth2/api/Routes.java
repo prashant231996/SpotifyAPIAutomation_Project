@@ -57,6 +57,9 @@ public class Routes {
 	public static final String getEpisodeDetail="/episodes/{episodeId}";
 	public static final String getSevaralEpisods="/episodes";
 	public static final String saveEpisode="/me/episodes";
+	public static final String getUsersSavedEpisode="/me/episodes";
+	public static final String checkUsersSavedEpisode="/me/episodes/contains";
+	public static final String removeUsersSavedEpisode="/me/episodes";
 	
 	
 	

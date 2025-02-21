@@ -46,5 +46,37 @@ public class EpisodeAPITests {
 		//Verifying status code
 		Assert.assertEquals(res.getStatusCode(),StatusCode.CODE_200.code);
 	}
+	
+	@Test(priority=4,description="Get Users saved episodes")
+	public void getUsersSavedEpisode()
+	{
+		Response res=EpisodeApi.getUsersSavedEpisode();
+		//Verifying status code 200 in response
+		Assert.assertEquals(res.getStatusCode(), StatusCode.CODE_200.code);
+	}
+	
+	@Test(priority=5,description="check Users Saved Episode")
+	public void checkUsersSavedEpisode() throws IOException
+	{
+		Response res=EpisodeApi.checkUsersSavedEpisode(PropertyUtils.getPropertyValue("episodeIds"));
+		//Verifying 200 status code from response
+		Assert.assertEquals(res.getStatusCode(), StatusCode.CODE_200.code);
+		//Verifying false from the reponse
+		List<Object>responseList=res.as(List.class);
+		for(Object object:responseList)
+		{
+			Assert.assertFalse(Boolean.parseBoolean(object.toString()));
+		}
+	}
+	
+	@Test(priority=6,description="Remove users saved episodes")
+	public void removeUsersSavedEpisodes() throws IOException
+	{
+		List<String>ids=new ArrayList<String>();
+		ids.add(PropertyUtils.getPropertyValue("episodeId"));
+		Response res=EpisodeApi.removeUsersSavedEpisode(ids);
+		Assert.assertEquals(res.getStatusCode(), StatusCode.CODE_200.code);
+	}
+	
 
 }
