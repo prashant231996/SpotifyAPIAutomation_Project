@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.spotify.oauth2.tests.EpisodeAPITests">
+      <class name="com.spotify.oauth2.tests.PlayerAPITest">
         <methods>
-          <include name="removeUsersSavedEpisodes"/>
+          <include name="getAvailableDevices"/>
         </methods>
-      </class> <!-- com.spotify.oauth2.tests.EpisodeAPITests -->
+      </class> <!-- com.spotify.oauth2.tests.PlayerAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

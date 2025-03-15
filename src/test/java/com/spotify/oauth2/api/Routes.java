@@ -61,6 +61,13 @@ public class Routes {
 	public static final String checkUsersSavedEpisode="/me/episodes/contains";
 	public static final String removeUsersSavedEpisode="/me/episodes";
 	
+	//Player API endpoints
+	public static final String getPlayBackState="/me/player";
+	public static final String addItemToPlayBackQueue="/me/player/queue";
+	public static final String transferbackPlay="/me/player";
+	public static final String getAvailableDevices="/me/player/devices";
+	public static final String startAndResumePlayBack="/player/play";
+	
 	
 	
 	
