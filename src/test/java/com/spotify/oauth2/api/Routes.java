@@ -70,6 +70,8 @@ public class Routes {
 
     //Markets API endpoints
     public static final String getAvailableMarkets="/markets";
+
+
 	
 	
 	
