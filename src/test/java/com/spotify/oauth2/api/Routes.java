@@ -67,6 +67,9 @@ public class Routes {
 	public static final String transferbackPlay="/me/player";
 	public static final String getAvailableDevices="/me/player/devices";
 	public static final String startAndResumePlayBack="/player/play";
+
+    //Markets API endpoints
+    public static final String getAvailableMarkets="/markets";
 	
 	
 	
