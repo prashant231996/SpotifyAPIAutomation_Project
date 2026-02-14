@@ -71,6 +71,10 @@ public class Routes {
     //Markets API endpoints
     public static final String getAvailableMarkets="/markets";
 
+    //User API endpoints
+    public static final String getCurrantUserProfile="/me";
+    public static final String getUsersProfile="/users/{userId}";
+
 
 	
 	
